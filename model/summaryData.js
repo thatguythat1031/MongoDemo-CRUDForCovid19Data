@@ -33,4 +33,4 @@ const summaryDataSchema = mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("summaryData", summaryDataSchema);
+module.exports = mongoose.model("summaryData", summaryDataSchema, "summaryData");

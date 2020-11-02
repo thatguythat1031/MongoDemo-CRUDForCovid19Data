@@ -82,4 +82,4 @@ const rawReportsSchema = mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("rawReports", rawReportsSchema);
+module.exports = mongoose.model("rawReport", rawReportsSchema);
