@@ -32,6 +32,8 @@ app.use(express.json());
 //imported routes
 const summaryRouter = require("./routes/summaryData");
 app.use("/summaryData", summaryRouter);
+const rawReportsRouter = require("./routes/rawReports");
+app.use("/rawReports", rawReportsRouter);
 
 //database connection- local for now
 mongoose.connect(process.env.DB_CONNECTION, {
