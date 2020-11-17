@@ -1,9 +1,16 @@
 # MongoDemo-CRUDForCovid19Data
-Restful API built with a MongoDB backend. Built to try out MongoDB for storing Covid19 Data
+Restful API built with a MongoDB backend. Built to try out MongoDB for storing Covid19 Data. Also a short demo for me to try docker and docker-compose.
 
-Requires that the ENV variable DB_CONNECTION is specified as your MongoDB connection string.j
+Requires that the ENV variable DB_CONNECTION is specified as your MongoDB connection string if you're not running it through docker.
 
 Not listed below is an additional `POST` endpoint that is not yet finished.
+
+To run:
+1. Run `docker-compose build`
+2. Run `docker-compose up`
+
+The above will start up the server, along with a mongodb database pre-seeded with some of my sample data. The requests described below will work as if you had a local mongodb instance running. 
+Note: you will see some error output during the run process for the docker containers. This is due to the seed containers not waiting for the database to be setup before attempting to run `mongoimport`. This results in mulitple retries.
 
 Project is paused for now.
 

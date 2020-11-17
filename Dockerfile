@@ -1,4 +1,6 @@
-FROM node:12
+FROM node:11-alpine
+
+RUN mkdir -p /usr/src/app
 
 #Create app directory
 WORKDIR /usr/src/app
@@ -13,7 +15,7 @@ RUN npm install
 COPY . .
 
 #expose port 8080 to docker daemon
-EXPOSE 8080
+EXPOSE 5000
 
 #command to start server
 CMD [ "node", "index.js" ]
